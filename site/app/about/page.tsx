@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Whetū Candle Co. | Our maker story and studio values",
+  title: "About Whetū Candle Co. | Raglan Soy Candles",
   description:
-    "Meet the maker behind Whetū Candle Co. and learn about our soy wax, thoughtful ingredients, and sustainability commitments.",
+    "Learn about Whetū Candle Co., a Raglan candle studio crafting hand-poured soy candles with thoughtful ingredients and practical sustainability.",
 };
 
 const ingredients = [
@@ -13,19 +13,19 @@ const ingredients = [
     title: "Soy wax",
     body: "Plant-based soy wax for a smooth surface, clean burn, and gentle scent release.",
     image: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=700&h=600&fit=crop",
-    alt: "Pale botanical stems and natural textures against a neutral backdrop.",
+    alt: "Natural botanicals and textures representing ingredients used in hand-poured soy candles.",
   },
   {
     title: "Cotton wicks",
     body: "Lead-free cotton wicks chosen for an even flame and dependable performance.",
     image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700&h=600&fit=crop",
-    alt: "Hands carefully handling delicate material in a bright studio setting.",
+    alt: "Hands handling candle-making materials in a bright studio for small-batch candle production.",
   },
   {
     title: "Fragrance blends",
     body: "Layered fragrance compositions that lean earthy, mineral, and quietly floral.",
     image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=700&h=600&fit=crop",
-    alt: "Glass bottles and fragrance materials arranged neatly on a work surface.",
+    alt: "Fragrance bottles and materials arranged for artisan home fragrance blending.",
   },
 ];
 
@@ -39,15 +39,15 @@ const commitments = [
 const gallery = [
   {
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&h=900&fit=crop",
-    alt: "Warm kitchen or studio corner with wooden textures and neutral styling.",
+    alt: "Warm studio corner with wooden textures that reflect the Whetū Candle Co. maker aesthetic.",
   },
   {
     image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=700&h=900&fit=crop",
-    alt: "Layered home interior with natural textiles and warm daylight.",
+    alt: "Layered natural interior styled to match calm New Zealand home fragrance spaces.",
   },
   {
     image: "https://images.unsplash.com/photo-1494526585095-c41746248156?w=700&h=900&fit=crop",
-    alt: "Serene bedroom or living corner with calming natural palette.",
+    alt: "Serene home interior with a calm palette suited to boutique candle styling.",
   },
 ];
 
@@ -57,19 +57,19 @@ export default function AboutPage() {
       <section className="section-shell section-space text-center">
         <p className="eyebrow">Meet the maker</p>
         <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-          A candle studio shaped by coast, calm, and careful process.
+          About our Raglan soy candle studio.
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[color:var(--text)]/80">
           Whetū Candle Co. was built around the idea that scent can hold a sense of place. From a small Raglan studio, each batch is poured by hand with a focus on balance, burn quality, and understated beauty.
         </p>
         <div className="mt-12 overflow-hidden rounded-[36px] shadow-hard">
-          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1400&h=720&fit=crop" alt="Warm, curated interior with natural light and relaxed styling." className="h-[24rem] w-full object-cover md:h-[34rem]" />
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1400&h=720&fit=crop" alt="Warm curated interior that reflects the calm, coastal feel of Whetū Candle Co. soy candles." className="h-[24rem] w-full object-cover md:h-[34rem]" />
         </div>
       </section>
 
       <section className="section-shell section-space grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
         <div className="overflow-hidden rounded-[30px] shadow-medium">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&h=1100&fit=crop" alt="Smiling woman in soft natural light, representing the founder and maker." className="h-[34rem] w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=900&h=1100&fit=crop" alt="Founder portrait representing the maker behind Whetū Candle Co. hand-poured soy candles in Raglan." className="h-[34rem] w-full object-cover" />
         </div>
         <div className="space-y-6">
           <h2 className="section-title">From evening ritual to studio craft.</h2>
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
       <section className="section-shell section-space">
         <div className="mb-12 max-w-3xl">
-          <h2 className="section-title">What goes into each pour</h2>
+          <h2 className="section-title">What goes into each soy candle pour</h2>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           {ingredients.map((item) => (
@@ -111,7 +111,7 @@ export default function AboutPage() {
           </ul>
         </div>
         <div className="overflow-hidden rounded-[30px] shadow-medium">
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&h=1100&fit=crop" alt="Sunlit neutral interior with reusable objects and natural materials." className="h-[34rem] w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=900&h=1100&fit=crop" alt="Sunlit reusable home objects and natural materials that support sustainable candle packaging choices." className="h-[34rem] w-full object-cover" />
         </div>
       </section>
 

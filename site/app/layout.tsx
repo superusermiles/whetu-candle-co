@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Mail, Menu, Sparkles, X } from "lucide-react";
 import "./globals.css";
 
+const siteUrl = "https://whetu-candle-co.vercel.app";
+
 const cormorant = Cormorant_Garamond({
   variable: "--font-heading",
   subsets: ["latin"],
@@ -16,10 +18,68 @@ const manrope = Manrope({
   weight: ["400", "500", "600", "700"],
 });
 
-export const metadata: Metadata = {
-  title: "Whetū Candle Co. | Scents of Aotearoa, poured by hand.",
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  name: "Whetū Candle Co.",
   description:
-    "Boutique hand-poured soy candles from Raglan, New Zealand — earthy home fragrance inspired by coast, clay, and slow living.",
+    "Hand-poured soy candles from Raglan, New Zealand, with small-batch home fragrance inspired by Aotearoa's coast, botanicals, and slow living.",
+  url: siteUrl,
+  telephone: "+64 21 000 0000",
+  email: "hello@whetucandleco.nz",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Raglan",
+    addressRegion: "Waikato",
+    addressCountry: "NZ",
+  },
+  areaServed: ["Raglan", "Waikato", "New Zealand", "Australia"],
+  sameAs: ["https://instagram.com/whetucandleco"],
+  knowsAbout: [
+    "Hand-poured soy candles",
+    "Home fragrance",
+    "Wholesale candles",
+    "Small-batch candles",
+    "Sustainable candles",
+  ],
+};
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+  description:
+    "Shop hand-poured soy candles in Raglan, New Zealand. Whetū Candle Co. creates small-batch home fragrance for gifting, interiors, and wholesale stockists.",
+  keywords: [
+    "hand-poured soy candles Raglan",
+    "soy candles New Zealand",
+    "Raglan candles",
+    "home fragrance NZ",
+    "small-batch candles",
+    "wholesale candles New Zealand",
+    "artisan candles NZ",
+    "sustainable candles NZ",
+    "gift candles New Zealand",
+    "Whetū Candle Co.",
+  ],
+  openGraph: {
+    title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+    description:
+      "Discover small-batch soy candles from Raglan with earthy scent blends for homes, gifting, and wholesale stockists across New Zealand.",
+    url: siteUrl,
+    siteName: "Whetū Candle Co.",
+    type: "website",
+    locale: "en_NZ",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+    description:
+      "Small-batch soy candles from Raglan, crafted for calm interiors, gifting, and wholesale enquiries across New Zealand.",
+  },
+  robots: { index: true, follow: true },
+  alternates: {
+    canonical: siteUrl,
+  },
   icons: {
     icon: "/favicon.svg",
   },
@@ -132,8 +192,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${manrope.variable} h-full scroll-smooth`}>
+    <html lang="en-NZ" className={`${cormorant.variable} ${manrope.variable} h-full scroll-smooth`}>
       <body className="min-h-full bg-[color:var(--background)] font-body text-[color:var(--text)] antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <SiteHeader />
         <main className="flex min-h-[calc(100vh-88px)] flex-col">{children}</main>
         <SiteFooter />

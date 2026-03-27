@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shop & Wholesale Enquiries | Whetū Candle Co.",
+  title: "Wholesale Soy Candles in Raglan | Whetū Candle Co.",
   description:
-    "Explore six signature candles from Whetū Candle Co. and get in touch for wholesale, styling, and stockist enquiries.",
+    "Explore Whetū Candle Co.'s soy candles in Raglan and contact us for wholesale candle enquiries, stockist requests, styling projects, and hospitality spaces.",
 };
 
 const products = [
@@ -14,7 +14,7 @@ const products = [
     burnTime: "45 hours",
     price: "NZ$42",
     image: "https://images.unsplash.com/photo-1602874801006-e26f3f93f0a7?w=800&h=900&fit=crop",
-    alt: "Candle in a glass vessel beside dried botanicals.",
+    alt: "Dune soy candle in a glass vessel with dried botanicals for coastal-inspired home fragrance.",
   },
   {
     name: "Nikau",
@@ -23,7 +23,7 @@ const products = [
     burnTime: "45 hours",
     price: "NZ$42",
     image: "https://images.unsplash.com/photo-1608181831718-4f830ddb0c2d?w=800&h=900&fit=crop",
-    alt: "Candle vignette with warm low-angle light and ceramic textures.",
+    alt: "Nikau small-batch soy candle with ceramic textures and warm ambient styling.",
   },
   {
     name: "Ember",
@@ -32,7 +32,7 @@ const products = [
     burnTime: "50 hours",
     price: "NZ$44",
     image: "https://images.unsplash.com/photo-1634746715098-6cafbc6a7a00?w=800&h=900&fit=crop",
-    alt: "Minimal candle and vessel styling with earthy shadows and a muted palette.",
+    alt: "Ember artisan soy candle with earthy shadows for premium home fragrance in New Zealand.",
   },
   {
     name: "Tide",
@@ -41,7 +41,7 @@ const products = [
     burnTime: "45 hours",
     price: "NZ$42",
     image: "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&h=900&fit=crop",
-    alt: "Hand-poured candle styled on a warm neutral surface with soft morning light.",
+    alt: "Tide hand-poured soy candle styled on a warm neutral surface with soft natural light.",
   },
   {
     name: "Harbour",
@@ -50,7 +50,7 @@ const products = [
     burnTime: "50 hours",
     price: "NZ$44",
     image: "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=800&h=900&fit=crop",
-    alt: "Studio-style arrangement of candles, vessels, and natural textures.",
+    alt: "Harbour soy candle arranged with vessels and natural textures for boutique shelf styling.",
   },
   {
     name: "Bloom",
@@ -59,7 +59,7 @@ const products = [
     burnTime: "45 hours",
     price: "NZ$42",
     image: "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=800&h=900&fit=crop",
-    alt: "Warm neutral home scene with candlelit ambience.",
+    alt: "Bloom soy candle in a warm neutral interior for gifting and wholesale candle collections.",
   },
 ];
 
@@ -78,7 +78,7 @@ export default function ShopContactPage() {
         <div className="max-w-3xl">
           <p className="eyebrow">Collection + enquiries</p>
           <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-            Signature candles for shelves, gifting, and slow-lit rooms.
+            Soy candles and wholesale enquiries in Raglan.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--text)]/80">
             Explore the core Whetū range below. For wholesale orders, collaborations, or styling enquiries, use the form and we’ll be in touch within three working days.
@@ -127,7 +127,7 @@ export default function ShopContactPage() {
             <h2 className="section-title">Fragrance for homes that favour texture, calm, and character.</h2>
             <p className="prose-copy mt-6">Each candle is designed to sit easily among linen, timber, ceramics, and the everyday rituals that make a home feel lived in.</p>
           </div>
-          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&h=700&fit=crop" alt="Soft linen and natural decor details in warm coastal light." className="h-72 w-full object-cover lg:h-full" />
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=900&h=700&fit=crop" alt="Soft linen and natural décor details paired with artisan candle styling for calm interiors." className="h-72 w-full object-cover lg:h-full" />
         </div>
       </section>
 
@@ -135,7 +135,7 @@ export default function ShopContactPage() {
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="rounded-[30px] bg-white/80 p-8 shadow-soft md:p-10">
             <p className="eyebrow">Wholesale enquiries</p>
-            <h2 className="section-title">Wholesale enquiries</h2>
+            <h2 className="section-title">Wholesale candle enquiries</h2>
             <p className="prose-copy mt-5">Tell us about your store, project, or hospitality space and we’ll send current scent notes, pricing, and lead times.</p>
             <form action="https://formsubmit.co/hello@whetucandleco.nz" method="POST" className="mt-8 space-y-5">
               <input type="hidden" name="_subject" value="Whetū Candle Co. wholesale enquiry" />
@@ -156,12 +156,11 @@ export default function ShopContactPage() {
               <button type="submit" className="inline-flex rounded-full bg-[color:var(--primary)] px-6 py-4 text-sm font-semibold text-[color:var(--background)] shadow-soft transition duration-300 hover:-translate-y-0.5 hover:shadow-medium">
                 Send enquiry
               </button>
-              <p className="text-sm leading-6 text-[color:var(--text)]/65">Success message placeholder: thanks for your enquiry — we’ll respond within three working days.</p>
             </form>
           </div>
           <div className="space-y-6 rounded-[30px] bg-[color:var(--accent)]/35 p-6 shadow-soft md:p-8">
             <div className="overflow-hidden rounded-[24px]">
-              <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900&h=1100&fit=crop" alt="Thoughtfully styled workspace with papers, objects, and warm natural materials." className="h-[24rem] w-full object-cover md:h-[28rem]" />
+              <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=900&h=1100&fit=crop" alt="Styled wholesale workspace image supporting candle stockist and hospitality enquiries." className="h-[24rem] w-full object-cover md:h-[28rem]" />
             </div>
             <div>
               <h3 className="font-heading text-3xl text-[color:var(--primary)]">Prefer a direct introduction?</h3>

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Flame, Leaf, PackageCheck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Hand-Poured Soy Candles in Raglan | Whetū Candle Co.",
+  description:
+    "Discover hand-poured soy candles in Raglan, New Zealand, with small-batch scents inspired by Aotearoa's coast, botanicals, and calm interiors.",
+};
 
 const featuredScents = [
   {
@@ -8,7 +15,7 @@ const featuredScents = [
     mood: "Soft, mineral, sun-warmed.",
     burnTime: "45 hours",
     image: "https://images.unsplash.com/photo-1602874801006-e26f3f93f0a7?w=800&h=900&fit=crop",
-    alt: "Candle in a glass vessel beside dried botanicals.",
+    alt: "Hand-poured soy candle in a glass vessel with dried botanicals for coastal home fragrance styling.",
   },
   {
     name: "Nikau",
@@ -16,7 +23,7 @@ const featuredScents = [
     mood: "Fresh, shaded, restorative.",
     burnTime: "45 hours",
     image: "https://images.unsplash.com/photo-1612198527270-6f0c8d7a4f2d?w=800&h=900&fit=crop",
-    alt: "Neutral-toned candle and home decor styling on a shelf.",
+    alt: "Small-batch soy candle styled with neutral home décor for a calm New Zealand interior.",
   },
   {
     name: "Ember",
@@ -24,7 +31,7 @@ const featuredScents = [
     mood: "Low light, linen, slow evenings.",
     burnTime: "50 hours",
     image: "https://images.unsplash.com/photo-1608181831718-4f830ddb0c2d?w=800&h=900&fit=crop",
-    alt: "Candle vignette with warm low-angle light and ceramic textures.",
+    alt: "Artisan soy candle with warm evening light and ceramic textures for slow living home fragrance.",
   },
 ];
 
@@ -54,7 +61,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Hand-poured in Raglan, New Zealand</p>
             <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-              Scents of Aotearoa, poured by hand.
+              Hand-poured soy candles inspired by Aotearoa.
             </h1>
           </div>
           <p className="max-w-xl text-lg leading-8 text-[color:var(--text)]/80">
@@ -71,10 +78,10 @@ export default function HomePage() {
         </div>
         <div className="relative mx-auto w-full max-w-2xl lg:min-h-[44rem]">
           <div className="overflow-hidden rounded-[36px] shadow-hard lg:ml-16">
-            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=900&h=1200&fit=crop" alt="Hand-poured candle styled on a warm neutral surface with soft morning light." className="h-[28rem] w-full object-cover md:h-[36rem]" />
+            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?w=900&h=1200&fit=crop" alt="Hand-poured soy candle from Whetū Candle Co. styled on a warm neutral surface in Raglan-inspired light." className="h-[28rem] w-full object-cover md:h-[36rem]" />
           </div>
           <div className="mt-6 overflow-hidden rounded-[30px] shadow-medium lg:absolute lg:-bottom-10 lg:left-0 lg:mt-0 lg:w-[52%]">
-            <img src="https://images.unsplash.com/photo-1634746715098-6cafbc6a7a00?w=700&h=820&fit=crop" alt="Minimal candle and vessel styling with earthy shadows and a muted palette." className="h-72 w-full object-cover md:h-80" />
+            <img src="https://images.unsplash.com/photo-1634746715098-6cafbc6a7a00?w=700&h=820&fit=crop" alt="Minimal soy candle and vessel styling with earthy shadows for artisan home fragrance in New Zealand." className="h-72 w-full object-cover md:h-80" />
           </div>
         </div>
       </section>
@@ -82,7 +89,7 @@ export default function HomePage() {
       <section className="section-shell section-space">
         <div className="mb-12 max-w-3xl">
           <p className="eyebrow">Signature pours</p>
-          <h2 className="section-title">Six scents shaped by coast, clay, and evening light.</h2>
+          <h2 className="section-title">Six soy candle scents shaped by coast, clay, and evening light.</h2>
           <p className="prose-copy mt-5">A curated collection of grounded, layered fragrances made for slow mornings, dinner-party glow, and gifting with taste.</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
@@ -106,7 +113,7 @@ export default function HomePage() {
 
       <section className="section-shell section-space grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <div className="overflow-hidden rounded-[30px] shadow-medium">
-          <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=900&h=1100&fit=crop" alt="Studio-style arrangement of candles, vessels, and natural textures." className="h-[32rem] w-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?w=900&h=1100&fit=crop" alt="Studio arrangement of soy candles, vessels, and natural textures from a New Zealand candle maker." className="h-[32rem] w-full object-cover" />
         </div>
         <div className="rounded-[36px] bg-white/65 p-8 shadow-soft md:p-12">
           <p className="eyebrow">Our studio</p>
@@ -137,10 +144,10 @@ export default function HomePage() {
 
       <section className="relative overflow-hidden bg-[color:var(--dark)] py-16 md:py-24">
         <div className="absolute inset-y-0 right-0 hidden w-2/5 lg:block">
-          <img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?w=1000&h=700&fit=crop" alt="Warm neutral home scene with candlelit ambience." className="h-full w-full object-cover opacity-30" />
+          <img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?w=1000&h=700&fit=crop" alt="Warm neutral interior scene with candlelit ambience for wholesale candle styling inspiration." className="h-full w-full object-cover opacity-30" />
         </div>
         <div className="section-shell relative z-10 text-center lg:max-w-4xl">
-          <h2 className="font-heading text-4xl leading-none text-[color:var(--background)] md:text-5xl">Stock Whetū in your space.</h2>
+          <h2 className="font-heading text-4xl leading-none text-[color:var(--background)] md:text-5xl">Stock Whetū candles in your space.</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[color:var(--background)]/78">We partner with boutiques, interior stylists, hospitality spaces, and thoughtful gift stores across Aotearoa.</p>
           <Link href="/shop-contact/#wholesale-form" className="mt-8 inline-flex items-center justify-center rounded-full bg-[color:var(--secondary)] px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--dark)] shadow-soft transition duration-300 hover:-translate-y-0.5 hover:brightness-95">
             Start a wholesale enquiry
