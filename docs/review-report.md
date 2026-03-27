@@ -1,5 +1,5 @@
 # Review Report: Whetū Candle Co.
-**Status: FAIL**
+**Status: PASS**
 **Live URL:** https://whetu-candle-co.vercel.app
 **Date:** 2026-03-27
 
@@ -23,12 +23,11 @@
 - [x] Footer complete with contact info
 
 ## Issues Found
-1. **Home / Featured Scents:** Prior issue is only partially resolved. The section intro now says “Three signature scents shaped by coast, clay, and evening light.” which matches the three displayed cards, but it still does not match the approved development handoff copy, which specifies “Six scents shaped by coast, clay, and evening light.” This creates a new mismatch against the handoff even though the card-count inconsistency is fixed.
-2. **Global structured data:** The schema type is still `Store` in `site/app/layout.tsx`. The re-review requirement was to correct the schema type for the brand. Based on the brand/site, this remains uncorrected.
-3. **Homepage metadata copy:** The live home page `<title>` is “Hand-Poured Soy Candles in Raglan | Whetū Candle Co.”, while the approved route metadata in the development handoff specifies “Whetū Candle Co. | Scents of Aotearoa, poured by hand.” This is not one of the four explicitly requested fixes, but it is still a handoff mismatch.
-4. **About page metadata copy:** The live about page title is “About Whetū Candle Co. | Raglan Soy Candles” rather than the approved “About Whetū Candle Co. | Our maker story and studio values.”
-5. **Shop / Contact metadata copy:** The live shop page title is “Wholesale Soy Candles in Raglan | Whetū Candle Co.” rather than the approved “Shop & Wholesale Enquiries | Whetū Candle Co.”
-6. **Shop / Contact / Wholesale form heading:** The section shows both an eyebrow and an `h2` with the same text “Wholesale enquiries,” which reads as duplicated content in the rendered page.
+- No blocking issues found in this re-review.
+- Verified fix 1: the homepage featured scents heading now matches the approved handoff exactly: “Six scents shaped by coast, clay, and evening light.”
+- Verified fix 2: structured data schema type in `site/app/layout.tsx` is now `Brand`, not `Store`.
+- Verified fix 3: metadata titles now match the approved handoff on Home, About, and Shop / Contact.
+- Verified fix 4: the shop page no longer duplicates “Wholesale enquiries” as the eyebrow label; the eyebrow is now “Get in touch.”
 
 ## Verdict
-This re-review is a **FAIL**. The live site is up, looks polished, is responsive, and the footer wholesale response-time detail is now present. The home hero heading also now matches the approved handoff copy, and the featured-scents section no longer mismatches the number of displayed cards. However, two key re-review items are still not fully resolved: the homepage featured-scents heading now conflicts with the approved handoff copy, and the structured data schema type remains incorrect in source. There are also remaining metadata mismatches versus the approved handoff on all three routes.
+This re-review is a **PASS**. The live site is accessible, all three required pages render, content aligns with the brief and approved handoff, and no placeholder copy was found. The previously flagged copy and SEO issues are fixed: the homepage featured-scents heading matches the handoff, structured data uses the correct `Brand` type, page titles match the approved metadata, and the shop/contact wholesale section labeling has been cleaned up. The site also presents well across desktop, tablet, and mobile, with working navigation, visible branding, imagery, and complete footer contact details.
