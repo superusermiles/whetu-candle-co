@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6b5a46;
+  --secondary: #a78f6a;
+  --accent: #c9b8a3;
+  --background: #f5f0e7;
+  --text: #2e2a26;
+  --muted: #dccfbe;
+  --dark: #3d342c;
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+  --shadow-soft: 0 8px 24px rgba(46, 42, 38, 0.08);
+  --shadow-medium: 0 16px 40px rgba(46, 42, 38, 0.12);
+  --shadow-hard: 0 24px 70px rgba(46, 42, 38, 0.18);
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 md:px-8 lg:px-12;
+  }
+
+  .section-space {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  .eyebrow {
+    @apply mb-4 inline-block text-xs font-semibold uppercase tracking-[0.28em] text-secondary;
+  }
+
+  .section-title {
+    @apply font-heading text-4xl leading-none text-primary md:text-5xl lg:text-[2.75rem];
+  }
+
+  .prose-copy {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgba(46, 42, 38, 0.8);
+  }
+
+  .nav-link,
+  .nav-link-footer {
+    position: relative;
+  }
+
+  .mobile-nav-link {
+    @apply rounded-2xl border border-transparent px-4 py-3 font-medium transition hover:border-muted hover:bg-white;
+  }
+
+  .footer-contact {
+    @apply inline-flex items-center justify-center gap-2;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(167, 143, 106, 0.25);
+}
+
+.nav-link::after,
+.nav-link-footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  height: 1.5px;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: var(--secondary);
+  transition: transform 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after,
+.nav-link-footer:hover::after,
+.nav-link-footer:focus-visible::after {
+  transform: scaleX(1);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+input,
+select,
+textarea {
+  @apply w-full rounded-[14px] border border-muted bg-white px-4 py-3 text-sm text-text shadow-soft transition duration-300;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 4px rgba(167, 143, 106, 0.15);
+}
