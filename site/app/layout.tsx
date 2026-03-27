@@ -20,7 +20,7 @@ const manrope = Manrope({
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Store",
+  "@type": "Brand",
   name: "Whetū Candle Co.",
   description:
     "Hand-poured soy candles from Raglan, New Zealand, with small-batch home fragrance inspired by Aotearoa's coast, botanicals, and slow living.",
@@ -46,7 +46,7 @@ const structuredData = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+  title: "Whetū Candle Co. | Scents of Aotearoa, poured by hand.",
   description:
     "Shop hand-poured soy candles in Raglan, New Zealand. Whetū Candle Co. creates small-batch home fragrance for gifting, interiors, and wholesale stockists.",
   keywords: [
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     "Whetū Candle Co.",
   ],
   openGraph: {
-    title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+    title: "Whetū Candle Co. | Scents of Aotearoa, poured by hand.",
     description:
       "Discover small-batch soy candles from Raglan with earthy scent blends for homes, gifting, and wholesale stockists across New Zealand.",
     url: siteUrl,
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hand-Poured Soy Candles Raglan NZ | Whetū Candle Co.",
+    title: "Whetū Candle Co. | Scents of Aotearoa, poured by hand.",
     description:
       "Small-batch soy candles from Raglan, crafted for calm interiors, gifting, and wholesale enquiries across New Zealand.",
   },

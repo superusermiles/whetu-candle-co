@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Flame, Leaf, PackageCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hand-Poured Soy Candles in Raglan | Whetū Candle Co.",
+  title: "Whetū Candle Co. | Scents of Aotearoa, poured by hand.",
   description:
     "Discover hand-poured soy candles in Raglan, New Zealand, with small-batch scents inspired by Aotearoa's coast, botanicals, and calm interiors.",
 };
@@ -89,7 +89,7 @@ export default function HomePage() {
       <section className="section-shell section-space">
         <div className="mb-12 max-w-3xl">
           <p className="eyebrow">Signature pours</p>
-          <h2 className="section-title">Three signature scents shaped by coast, clay, and evening light.</h2>
+          <h2 className="section-title">Six scents shaped by coast, clay, and evening light.</h2>
           <p className="prose-copy mt-5">A curated collection of grounded, layered fragrances made for slow mornings, dinner-party glow, and gifting with taste.</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">

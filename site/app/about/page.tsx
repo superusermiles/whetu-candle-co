@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Whetū Candle Co. | Raglan Soy Candles",
+  title: "About Whetū Candle Co. | Our maker story and studio values",
   description:
     "Learn about Whetū Candle Co., a Raglan candle studio crafting hand-poured soy candles with thoughtful ingredients and practical sustainability.",
 };
@@ -82,7 +82,7 @@ export default function AboutPage() {
 
       <section className="section-shell section-space">
         <div className="mb-12 max-w-3xl">
-          <h2 className="section-title">What goes into each soy candle pour</h2>
+          <h2 className="section-title">What goes into each pour</h2>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           {ingredients.map((item) => (

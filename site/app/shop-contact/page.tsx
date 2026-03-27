@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wholesale Soy Candles in Raglan | Whetū Candle Co.",
+  title: "Shop & Wholesale Enquiries | Whetū Candle Co.",
   description:
     "Explore Whetū Candle Co.'s soy candles in Raglan and contact us for wholesale candle enquiries, stockist requests, styling projects, and hospitality spaces.",
 };
@@ -134,7 +134,7 @@ export default function ShopContactPage() {
       <section id="wholesale-form" className="section-shell pb-16 md:pb-24 lg:pb-32">
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="rounded-[30px] bg-white/80 p-8 shadow-soft md:p-10">
-            <p className="eyebrow">Wholesale enquiries</p>
+            <p className="eyebrow">Get in touch</p>
             <h2 className="section-title">Wholesale enquiries</h2>
             <p className="prose-copy mt-5">Tell us about your store, project, or hospitality space and we’ll send current scent notes, pricing, and lead times.</p>
             <form action="https://formsubmit.co/hello@whetucandleco.nz" method="POST" className="mt-8 space-y-5">
