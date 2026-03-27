@@ -20,15 +20,15 @@
 - [x] Meta tags present (title, description, OG)
 - [x] Color palette matches design spec
 - [x] Typography matches design spec
-- [ ] Footer complete with contact info
+- [x] Footer complete with contact info
 
 ## Issues Found
-- Global footer: missing the wholesale response time line required by the handoff footer/contact details spec.
-- Home page: hero heading does not match the approved handoff copy. Live site uses “Hand-poured soy candles inspired by Aotearoa.” instead of “Scents of Aotearoa, poured by hand.”
-- About page: hero heading does not match the approved handoff copy. Live site uses “About our Raglan soy candle studio.” instead of “A candle studio shaped by coast, calm, and careful process.”
-- Shop / Contact page: hero heading does not match the approved handoff copy. Live site uses “Soy candles and wholesale enquiries in Raglan.” instead of “Signature candles for shelves, gifting, and slow-lit rooms.”
-- Home page: featured scents section shows three cards only. The approved handoff copy specifies a section heading for six scents, which makes the current content inconsistent with the live section inventory.
-- SEO/schema: global structured data uses `HomeAndConstructionBusiness`, which is not an appropriate schema type for a candle brand and wholesale fragrance business.
+1. **Home / Featured Scents:** Prior issue is only partially resolved. The section intro now says “Three signature scents shaped by coast, clay, and evening light.” which matches the three displayed cards, but it still does not match the approved development handoff copy, which specifies “Six scents shaped by coast, clay, and evening light.” This creates a new mismatch against the handoff even though the card-count inconsistency is fixed.
+2. **Global structured data:** The schema type is still `Store` in `site/app/layout.tsx`. The re-review requirement was to correct the schema type for the brand. Based on the brand/site, this remains uncorrected.
+3. **Homepage metadata copy:** The live home page `<title>` is “Hand-Poured Soy Candles in Raglan | Whetū Candle Co.”, while the approved route metadata in the development handoff specifies “Whetū Candle Co. | Scents of Aotearoa, poured by hand.” This is not one of the four explicitly requested fixes, but it is still a handoff mismatch.
+4. **About page metadata copy:** The live about page title is “About Whetū Candle Co. | Raglan Soy Candles” rather than the approved “About Whetū Candle Co. | Our maker story and studio values.”
+5. **Shop / Contact metadata copy:** The live shop page title is “Wholesale Soy Candles in Raglan | Whetū Candle Co.” rather than the approved “Shop & Wholesale Enquiries | Whetū Candle Co.”
+6. **Shop / Contact / Wholesale form heading:** The section shows both an eyebrow and an `h2` with the same text “Wholesale enquiries,” which reads as duplicated content in the rendered page.
 
 ## Verdict
-The site is live, polished, responsive, and largely aligned with the intended visual direction. Core content exists, imagery loads, navigation works, and baseline SEO files are in place. However, this should still be marked FAIL for delivery because several visible headings diverge from the approved content handoff, the footer is missing one required contact/support detail, and the structured data type is incorrect for the business. These are fixable issues, but the site is not yet fully compliant with the brief and handoff.
+This re-review is a **FAIL**. The live site is up, looks polished, is responsive, and the footer wholesale response-time detail is now present. The home hero heading also now matches the approved handoff copy, and the featured-scents section no longer mismatches the number of displayed cards. However, two key re-review items are still not fully resolved: the homepage featured-scents heading now conflicts with the approved handoff copy, and the structured data schema type remains incorrect in source. There are also remaining metadata mismatches versus the approved handoff on all three routes.
