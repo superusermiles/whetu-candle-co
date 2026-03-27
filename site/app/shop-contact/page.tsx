@@ -78,7 +78,7 @@ export default function ShopContactPage() {
         <div className="max-w-3xl">
           <p className="eyebrow">Collection + enquiries</p>
           <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-            Soy candles and wholesale enquiries in Raglan.
+            Signature candles for shelves, gifting, and slow-lit rooms.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-[color:var(--text)]/80">
             Explore the core Whetū range below. For wholesale orders, collaborations, or styling enquiries, use the form and we’ll be in touch within three working days.
@@ -135,7 +135,7 @@ export default function ShopContactPage() {
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="rounded-[30px] bg-white/80 p-8 shadow-soft md:p-10">
             <p className="eyebrow">Wholesale enquiries</p>
-            <h2 className="section-title">Wholesale candle enquiries</h2>
+            <h2 className="section-title">Wholesale enquiries</h2>
             <p className="prose-copy mt-5">Tell us about your store, project, or hospitality space and we’ll send current scent notes, pricing, and lead times.</p>
             <form action="https://formsubmit.co/hello@whetucandleco.nz" method="POST" className="mt-8 space-y-5">
               <input type="hidden" name="_subject" value="Whetū Candle Co. wholesale enquiry" />

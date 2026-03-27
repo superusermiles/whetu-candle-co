@@ -61,7 +61,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow">Hand-poured in Raglan, New Zealand</p>
             <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-              Hand-poured soy candles inspired by Aotearoa.
+              Scents of Aotearoa, poured by hand.
             </h1>
           </div>
           <p className="max-w-xl text-lg leading-8 text-[color:var(--text)]/80">
@@ -89,7 +89,7 @@ export default function HomePage() {
       <section className="section-shell section-space">
         <div className="mb-12 max-w-3xl">
           <p className="eyebrow">Signature pours</p>
-          <h2 className="section-title">Six soy candle scents shaped by coast, clay, and evening light.</h2>
+          <h2 className="section-title">Three signature scents shaped by coast, clay, and evening light.</h2>
           <p className="prose-copy mt-5">A curated collection of grounded, layered fragrances made for slow mornings, dinner-party glow, and gifting with taste.</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
@@ -147,7 +147,7 @@ export default function HomePage() {
           <img src="https://images.unsplash.com/photo-1616627561950-9f746e330187?w=1000&h=700&fit=crop" alt="Warm neutral interior scene with candlelit ambience for wholesale candle styling inspiration." className="h-full w-full object-cover opacity-30" />
         </div>
         <div className="section-shell relative z-10 text-center lg:max-w-4xl">
-          <h2 className="font-heading text-4xl leading-none text-[color:var(--background)] md:text-5xl">Stock Whetū candles in your space.</h2>
+          <h2 className="font-heading text-4xl leading-none text-[color:var(--background)] md:text-5xl">Stock Whetū in your space.</h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[color:var(--background)]/78">We partner with boutiques, interior stylists, hospitality spaces, and thoughtful gift stores across Aotearoa.</p>
           <Link href="/shop-contact/#wholesale-form" className="mt-8 inline-flex items-center justify-center rounded-full bg-[color:var(--secondary)] px-6 py-4 text-sm font-semibold uppercase tracking-[0.16em] text-[color:var(--dark)] shadow-soft transition duration-300 hover:-translate-y-0.5 hover:brightness-95">
             Start a wholesale enquiry

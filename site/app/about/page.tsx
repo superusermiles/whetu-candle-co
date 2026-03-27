@@ -57,7 +57,7 @@ export default function AboutPage() {
       <section className="section-shell section-space text-center">
         <p className="eyebrow">Meet the maker</p>
         <h1 className="font-heading text-5xl leading-none text-[color:var(--primary)] md:text-6xl lg:text-[4rem]">
-          About our Raglan soy candle studio.
+          A candle studio shaped by coast, calm, and careful process.
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-[color:var(--text)]/80">
           Whetū Candle Co. was built around the idea that scent can hold a sense of place. From a small Raglan studio, each batch is poured by hand with a focus on balance, burn quality, and understated beauty.

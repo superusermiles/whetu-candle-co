@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import Link from "next/link";
-import { Mail, Menu, Sparkles, X } from "lucide-react";
+import { Clock3, Mail, Menu, Sparkles, X } from "lucide-react";
 import "./globals.css";
 
 const siteUrl = "https://whetu-candle-co.vercel.app";
@@ -20,7 +20,7 @@ const manrope = Manrope({
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
+  "@type": "Store",
   name: "Whetū Candle Co.",
   description:
     "Hand-poured soy candles from Raglan, New Zealand, with small-batch home fragrance inspired by Aotearoa's coast, botanicals, and slow living.",
@@ -172,10 +172,11 @@ function SiteFooter() {
           <Link className="nav-link-footer" href="/about/">About</Link>
           <Link className="nav-link-footer" href="/shop-contact/">Shop &amp; Contact</Link>
         </nav>
-        <div className="grid gap-4 text-sm text-[color:var(--background)]/80 md:grid-cols-3 md:gap-8">
+        <div className="grid gap-4 text-sm text-[color:var(--background)]/80 md:grid-cols-2 lg:grid-cols-4 md:gap-8">
           <a className="footer-contact" href="mailto:hello@whetucandleco.nz"><Mail size={16} />hello@whetucandleco.nz</a>
           <a className="footer-contact" href="https://instagram.com/whetucandleco" target="_blank" rel="noreferrer"><span aria-hidden="true">◎</span>@whetucandleco</a>
           <p className="footer-contact"><Sparkles size={16} />Raglan, New Zealand</p>
+          <p className="footer-contact"><Clock3 size={16} />Wholesale response time: within three working days</p>
         </div>
         <div className="space-y-2 text-sm text-[color:var(--background)]/70">
           <p>Reusable vessels. Recyclable packaging. Small-batch by design.</p>
